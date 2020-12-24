@@ -1,5 +1,5 @@
 const jokes = () => {
-    fetch("http://api.icndb.com/jokes/random").then((data) => {
+    fetch("https://api.icndb.com/jokes/random").then((data) => {
         return data.json();
     }).then((actualdata) => {
         const jokes = actualdata.value.joke;
