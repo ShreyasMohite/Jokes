@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.content-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box {
+    box-shadow: 0px 0px 10px;
+    text-align: center;
+    padding: 2rem;
+    .heading {
+        padding: 1rem 0rem;
+        h1 {
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-size: 3rem;
+        }
+    }
+    .jokes-section {
+        width: 20rem;
+        height: 20rem;
+        //border: 1px solid blue;
+        margin: 1rem;
+        h3 {
+            padding-top: 4rem;
+            font-family: 'Ubuntu', sans-serif;
+        }
+    }
+    .button {
+        margin-top: 1rem;
+        button {
+            padding: 1rem;
+            width: 12rem;
+            font-size: 1rem;
+            border: 1px solid black;
+            cursor: pointer;
+            border-radius: 14px;
+            transition: 1s;
+            &:hover {
+                box-shadow: 0px 0px 10px;
+            }
+        }
+    }
+}
+
+@media (max-width:800px) {
+    .box {
+        padding: 1rem;
+    }
+}
